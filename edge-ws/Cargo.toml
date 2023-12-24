@@ -3,9 +3,6 @@ name = "edge-ws"
 version = "0.1.0"
 edition = "2021"
 
-[features]
-nightly = ["embedded-io-async"]
-
 [dependencies]
-embedded-io-async = { workspace = true, optional = true }
+embedded-io-async = { workspace = true }
 embedded-svc = { workspace = true, optional = true, default-features = false }

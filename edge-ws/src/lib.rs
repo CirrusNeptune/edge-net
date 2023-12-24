@@ -1,9 +1,6 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 #![allow(stable_features)]
 #![allow(unknown_lints)]
-#![cfg_attr(feature = "nightly", feature(async_fn_in_trait))]
-#![cfg_attr(feature = "nightly", allow(async_fn_in_trait))]
-#![cfg_attr(feature = "nightly", feature(impl_trait_projections))]
 
 pub type Fragmented = bool;
 pub type Final = bool;
@@ -12,7 +9,6 @@ pub type Final = bool;
 #[cfg(feature = "embedded-svc")]
 pub use embedded_svc_compat::*;
 
-#[cfg(feature = "nightly")]
 pub mod io;
 
 #[derive(Copy, Clone, PartialEq, Eq, Debug)]
