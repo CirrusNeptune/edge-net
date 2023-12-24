@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [features]
-nightly = ["embedded-io-async", "embedded-svc?/nightly"]
+nightly = ["embedded-io-async"]
 
 [dependencies]
 embedded-io-async = { workspace = true, optional = true }
